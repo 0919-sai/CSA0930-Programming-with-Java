@@ -1,0 +1,27 @@
+import java.util.Arrays;
+
+public class ConfusionMatrixExample {
+    public static void main(String[] args) {
+        int[][] confusionMatrix = {
+            {5, 2},
+            {1, 8}
+        };
+
+        int TP = confusionMatrix[0][0];
+        int FP = confusionMatrix[0][1];
+        int TN = confusionMatrix[1][1];
+        int FN = confusionMatrix[1][0];
+
+        double precision = (double) TP / (TP + FP);
+        double recall = (double) TP / (TP + FN);
+        double f1Score = 2 * (precision * recall) / (precision + recall);
+
+        System.out.println("Confusion Matrix:");
+        System.out.println(Arrays.deepToString(confusionMatrix));
+        System.out.println("True Positive (TP): " + TP);
+        System.out.println("True Negative (TN): " + TN);
+        System.out.println("False Positive (FP): " + FP);
+        System.out.println("False Negative (FN): " + FN);
+        System.out.println("F1-Score: " + f1Score);
+    }
+}
