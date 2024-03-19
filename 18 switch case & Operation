@@ -1,0 +1,25 @@
+public class ShortestPath {
+    public static void main(String[] args) {
+        int[] array1 = {1, 2, 3, 4, 5};
+        int[] array2 = {1, 2, 3};
+        int[] array3 = {1, 2};
+
+        int path1 = array1.length;
+        int path2 = array2.length;
+        int path3 = array3.length;
+
+        int shortestPath = Math.min(path1, Math.min(path2, path3));
+
+        switch (shortestPath) {
+            case path1:
+                System.out.println("The shortest path is the first for loop.");
+                break;
+            case path2:
+                System.out.println("The shortest path is the second for loop.");
+                break;
+            case path3:
+                System.out.println("The shortest path is the third for loop.");
+                break;
+        }
+    }
+}
