@@ -1,0 +1,32 @@
+public class Main {
+    public static void main(String[] args) {
+        // Explicit conversion (narrowing) from larger data types to smaller ones
+        double doubleValue = 123.456;
+        float floatValue = (float) doubleValue; // Explicit casting from double to float
+        System.out.println("Float value: " + floatValue);
+
+        long longValue = 1234567890L;
+        int intValue = (int) longValue; // Explicit casting from long to int
+        System.out.println("Int value: " + intValue);
+
+        int intValue2 = 1234567890;
+        short shortValue = (short) intValue2; // Explicit casting from int to short
+        System.out.println("Short value: " + shortValue);
+
+        int intValue3 = 1234567890;
+        byte byteValue = (byte) intValue3; // Explicit casting from int to byte
+        System.out.println("Byte value: " + byteValue);
+
+        long longValue2 = 1234567890123456789L;
+        double doubleValue2 = (double) longValue2; // Explicit casting from long to double
+        System.out.println("Double value: " + doubleValue2);
+
+        float floatValue2 = 123.456F;
+        double doubleValue3 = floatValue2; // Implicit casting from float to double
+        System.out.println("Double value from float: " + doubleValue3);
+
+        int intValue4 = 1234567890;
+        char charValue = (char) intValue4; // Explicit casting from int to char
+        System.out.println("Char value: " + charValue);
+    }
+}
