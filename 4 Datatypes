@@ -1,0 +1,26 @@
+import java.util.concurrent.TimeUnit;
+
+public class StringBuilderAndStringBuffer {
+
+    public static void main(String[] args) {
+        int iterations = 100000;
+
+        // StringBuilder example
+        long startTime1 = System.nanoTime();
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < iterations; i++) {
+            stringBuilder.append("Hello, World!");
+        }
+        long endTime1 = System.nanoTime();
+        System.out.println("StringBuilder time: " + TimeUnit.MILLISECONDS.convert((endTime1 - startTime1), TimeUnit.NANOSECONDS) + " ms");
+
+        // StringBuffer example
+        long startTime2 = System.nanoTime();
+        StringBuffer stringBuffer = new StringBuffer();
+        for (int i = 0; i < iterations; i++) {
+            stringBuffer.append("Hello, World!");
+        }
+        long endTime2 = System.nanoTime();
+        System.out.println("StringBuffer time: " + TimeUnit.MILLISECONDS.convert((endTime2 - startTime2), TimeUnit.NANOSECONDS) + " ms");
+    }
+}
