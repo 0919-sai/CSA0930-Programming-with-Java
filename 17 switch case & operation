@@ -1,0 +1,15 @@
+public class LuckGuess {
+    public static void main(String[] args) {
+        int number = 7;
+
+        switch (number) {
+            case 3:
+            case 7:
+            case 9:
+                System.out.println("Your number is a lucky number!");
+                break;
+            default:
+                System.out.println("Your number is not a lucky number.");
+        }
+    }
+}
