@@ -8,14 +8,13 @@ public class ArrayLengthExample {
         int length1 = array1.length;
         int length2 = array2.length;
 
-        // Find the smallest length
         int smallestLength = Math.min(length1, length2);
 
-        // Make the arrays equal to the smallest length
+    
         array1 = Arrays.copyOf(array1, smallestLength);
         array2 = Arrays.copyOf(array2, smallestLength);
 
-        // Print the arrays
+       
         System.out.println("Array 1: " + Arrays.toString(array1));
         System.out.println("Array 2: " + Arrays.toString(array2));
     }
