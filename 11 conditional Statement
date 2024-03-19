@@ -1,0 +1,15 @@
+public class BrotherAges {
+    public static void main(String[] args) {
+        int olderBrotherAge = 56;
+        int ageDifference = 4; 
+
+        int youngerBrotherAge = olderBrotherAge - ageDifference;
+
+        System.out.println("The younger brother's age when the older brother is 56 is: " + youngerBrotherAge);
+
+        int olderBrotherAgeAtAgeDifference = 56 - ageDifference;
+        int youngerBrotherAgeAtAgeDifference = 2 * ageDifference;
+
+        System.out.println("The younger brother's age when the older brother was " + olderBrotherAgeAtAgeDifference + " is: " + youngerBrotherAgeAtAgeDifference);
+    }
+}
